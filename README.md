@@ -1,1 +1,5 @@
 # automaton
+
+
+
+ubuntu PC だよ。
