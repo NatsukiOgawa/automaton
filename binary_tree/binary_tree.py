@@ -10,7 +10,7 @@ G = Digraph(format= 'pdf')
 G.attr('node', shape='square')
 # shape='<要素の形を指定>'
 
-N = 150
+N = 20
 # ノード数(ここでは "点"のこと)
 # インデックスなので、0から数える
 
