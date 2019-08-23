@@ -1,0 +1,813 @@
+digraph {
+	node [shape=circle]
+	0 [label=A]
+	1 [label=B]
+	2 [label=C]
+	3 [label=D]
+	4 [label=E]
+	5 [label=F]
+	6 [label=G]
+	7 [label=H]
+	8 [label=I]
+	9 [label=J]
+	10 [label=A]
+	0 -> 10
+	11 [label=B]
+	0 -> 11
+	12 [label=C]
+	0 -> 12
+	13 [label=D]
+	0 -> 13
+	14 [label=E]
+	0 -> 14
+	15 [label=F]
+	0 -> 15
+	16 [label=G]
+	0 -> 16
+	17 [label=H]
+	0 -> 17
+	18 [label=I]
+	0 -> 18
+	19 [label=J]
+	0 -> 19
+	10 [label=A]
+	1 -> 10
+	11 [label=B]
+	1 -> 11
+	12 [label=C]
+	1 -> 12
+	13 [label=D]
+	1 -> 13
+	14 [label=E]
+	1 -> 14
+	15 [label=F]
+	1 -> 15
+	16 [label=G]
+	1 -> 16
+	17 [label=H]
+	1 -> 17
+	18 [label=I]
+	1 -> 18
+	19 [label=J]
+	1 -> 19
+	10 [label=A]
+	2 -> 10
+	11 [label=B]
+	2 -> 11
+	12 [label=C]
+	2 -> 12
+	13 [label=D]
+	2 -> 13
+	14 [label=E]
+	2 -> 14
+	15 [label=F]
+	2 -> 15
+	16 [label=G]
+	2 -> 16
+	17 [label=H]
+	2 -> 17
+	18 [label=I]
+	2 -> 18
+	19 [label=J]
+	2 -> 19
+	10 [label=A]
+	3 -> 10
+	11 [label=B]
+	3 -> 11
+	12 [label=C]
+	3 -> 12
+	13 [label=D]
+	3 -> 13
+	14 [label=E]
+	3 -> 14
+	15 [label=F]
+	3 -> 15
+	16 [label=G]
+	3 -> 16
+	17 [label=H]
+	3 -> 17
+	18 [label=I]
+	3 -> 18
+	19 [label=J]
+	3 -> 19
+	10 [label=A]
+	4 -> 10
+	11 [label=B]
+	4 -> 11
+	12 [label=C]
+	4 -> 12
+	13 [label=D]
+	4 -> 13
+	14 [label=E]
+	4 -> 14
+	15 [label=F]
+	4 -> 15
+	16 [label=G]
+	4 -> 16
+	17 [label=H]
+	4 -> 17
+	18 [label=I]
+	4 -> 18
+	19 [label=J]
+	4 -> 19
+	10 [label=A]
+	5 -> 10
+	11 [label=B]
+	5 -> 11
+	12 [label=C]
+	5 -> 12
+	13 [label=D]
+	5 -> 13
+	14 [label=E]
+	5 -> 14
+	15 [label=F]
+	5 -> 15
+	16 [label=G]
+	5 -> 16
+	17 [label=H]
+	5 -> 17
+	18 [label=I]
+	5 -> 18
+	19 [label=J]
+	5 -> 19
+	10 [label=A]
+	6 -> 10
+	11 [label=B]
+	6 -> 11
+	12 [label=C]
+	6 -> 12
+	13 [label=D]
+	6 -> 13
+	14 [label=E]
+	6 -> 14
+	15 [label=F]
+	6 -> 15
+	16 [label=G]
+	6 -> 16
+	17 [label=H]
+	6 -> 17
+	18 [label=I]
+	6 -> 18
+	19 [label=J]
+	6 -> 19
+	10 [label=A]
+	7 -> 10
+	11 [label=B]
+	7 -> 11
+	12 [label=C]
+	7 -> 12
+	13 [label=D]
+	7 -> 13
+	14 [label=E]
+	7 -> 14
+	15 [label=F]
+	7 -> 15
+	16 [label=G]
+	7 -> 16
+	17 [label=H]
+	7 -> 17
+	18 [label=I]
+	7 -> 18
+	19 [label=J]
+	7 -> 19
+	10 [label=A]
+	8 -> 10
+	11 [label=B]
+	8 -> 11
+	12 [label=C]
+	8 -> 12
+	13 [label=D]
+	8 -> 13
+	14 [label=E]
+	8 -> 14
+	15 [label=F]
+	8 -> 15
+	16 [label=G]
+	8 -> 16
+	17 [label=H]
+	8 -> 17
+	18 [label=I]
+	8 -> 18
+	19 [label=J]
+	8 -> 19
+	10 [label=A]
+	9 -> 10
+	11 [label=B]
+	9 -> 11
+	12 [label=C]
+	9 -> 12
+	13 [label=D]
+	9 -> 13
+	14 [label=E]
+	9 -> 14
+	15 [label=F]
+	9 -> 15
+	16 [label=G]
+	9 -> 16
+	17 [label=H]
+	9 -> 17
+	18 [label=I]
+	9 -> 18
+	19 [label=J]
+	9 -> 19
+	20 [label=A]
+	10 -> 20
+	21 [label=B]
+	10 -> 21
+	22 [label=C]
+	10 -> 22
+	23 [label=D]
+	10 -> 23
+	24 [label=E]
+	10 -> 24
+	25 [label=F]
+	10 -> 25
+	26 [label=G]
+	10 -> 26
+	27 [label=H]
+	10 -> 27
+	28 [label=I]
+	10 -> 28
+	29 [label=J]
+	10 -> 29
+	20 [label=A]
+	11 -> 20
+	21 [label=B]
+	11 -> 21
+	22 [label=C]
+	11 -> 22
+	23 [label=D]
+	11 -> 23
+	24 [label=E]
+	11 -> 24
+	25 [label=F]
+	11 -> 25
+	26 [label=G]
+	11 -> 26
+	27 [label=H]
+	11 -> 27
+	28 [label=I]
+	11 -> 28
+	29 [label=J]
+	11 -> 29
+	20 [label=A]
+	12 -> 20
+	21 [label=B]
+	12 -> 21
+	22 [label=C]
+	12 -> 22
+	23 [label=D]
+	12 -> 23
+	24 [label=E]
+	12 -> 24
+	25 [label=F]
+	12 -> 25
+	26 [label=G]
+	12 -> 26
+	27 [label=H]
+	12 -> 27
+	28 [label=I]
+	12 -> 28
+	29 [label=J]
+	12 -> 29
+	20 [label=A]
+	13 -> 20
+	21 [label=B]
+	13 -> 21
+	22 [label=C]
+	13 -> 22
+	23 [label=D]
+	13 -> 23
+	24 [label=E]
+	13 -> 24
+	25 [label=F]
+	13 -> 25
+	26 [label=G]
+	13 -> 26
+	27 [label=H]
+	13 -> 27
+	28 [label=I]
+	13 -> 28
+	29 [label=J]
+	13 -> 29
+	20 [label=A]
+	14 -> 20
+	21 [label=B]
+	14 -> 21
+	22 [label=C]
+	14 -> 22
+	23 [label=D]
+	14 -> 23
+	24 [label=E]
+	14 -> 24
+	25 [label=F]
+	14 -> 25
+	26 [label=G]
+	14 -> 26
+	27 [label=H]
+	14 -> 27
+	28 [label=I]
+	14 -> 28
+	29 [label=J]
+	14 -> 29
+	20 [label=A]
+	15 -> 20
+	21 [label=B]
+	15 -> 21
+	22 [label=C]
+	15 -> 22
+	23 [label=D]
+	15 -> 23
+	24 [label=E]
+	15 -> 24
+	25 [label=F]
+	15 -> 25
+	26 [label=G]
+	15 -> 26
+	27 [label=H]
+	15 -> 27
+	28 [label=I]
+	15 -> 28
+	29 [label=J]
+	15 -> 29
+	20 [label=A]
+	16 -> 20
+	21 [label=B]
+	16 -> 21
+	22 [label=C]
+	16 -> 22
+	23 [label=D]
+	16 -> 23
+	24 [label=E]
+	16 -> 24
+	25 [label=F]
+	16 -> 25
+	26 [label=G]
+	16 -> 26
+	27 [label=H]
+	16 -> 27
+	28 [label=I]
+	16 -> 28
+	29 [label=J]
+	16 -> 29
+	20 [label=A]
+	17 -> 20
+	21 [label=B]
+	17 -> 21
+	22 [label=C]
+	17 -> 22
+	23 [label=D]
+	17 -> 23
+	24 [label=E]
+	17 -> 24
+	25 [label=F]
+	17 -> 25
+	26 [label=G]
+	17 -> 26
+	27 [label=H]
+	17 -> 27
+	28 [label=I]
+	17 -> 28
+	29 [label=J]
+	17 -> 29
+	20 [label=A]
+	18 -> 20
+	21 [label=B]
+	18 -> 21
+	22 [label=C]
+	18 -> 22
+	23 [label=D]
+	18 -> 23
+	24 [label=E]
+	18 -> 24
+	25 [label=F]
+	18 -> 25
+	26 [label=G]
+	18 -> 26
+	27 [label=H]
+	18 -> 27
+	28 [label=I]
+	18 -> 28
+	29 [label=J]
+	18 -> 29
+	20 [label=A]
+	19 -> 20
+	21 [label=B]
+	19 -> 21
+	22 [label=C]
+	19 -> 22
+	23 [label=D]
+	19 -> 23
+	24 [label=E]
+	19 -> 24
+	25 [label=F]
+	19 -> 25
+	26 [label=G]
+	19 -> 26
+	27 [label=H]
+	19 -> 27
+	28 [label=I]
+	19 -> 28
+	29 [label=J]
+	19 -> 29
+	30 [label=A]
+	20 -> 30
+	31 [label=B]
+	20 -> 31
+	32 [label=C]
+	20 -> 32
+	33 [label=D]
+	20 -> 33
+	34 [label=E]
+	20 -> 34
+	35 [label=F]
+	20 -> 35
+	36 [label=G]
+	20 -> 36
+	37 [label=H]
+	20 -> 37
+	38 [label=I]
+	20 -> 38
+	39 [label=J]
+	20 -> 39
+	30 [label=A]
+	21 -> 30
+	31 [label=B]
+	21 -> 31
+	32 [label=C]
+	21 -> 32
+	33 [label=D]
+	21 -> 33
+	34 [label=E]
+	21 -> 34
+	35 [label=F]
+	21 -> 35
+	36 [label=G]
+	21 -> 36
+	37 [label=H]
+	21 -> 37
+	38 [label=I]
+	21 -> 38
+	39 [label=J]
+	21 -> 39
+	30 [label=A]
+	22 -> 30
+	31 [label=B]
+	22 -> 31
+	32 [label=C]
+	22 -> 32
+	33 [label=D]
+	22 -> 33
+	34 [label=E]
+	22 -> 34
+	35 [label=F]
+	22 -> 35
+	36 [label=G]
+	22 -> 36
+	37 [label=H]
+	22 -> 37
+	38 [label=I]
+	22 -> 38
+	39 [label=J]
+	22 -> 39
+	30 [label=A]
+	23 -> 30
+	31 [label=B]
+	23 -> 31
+	32 [label=C]
+	23 -> 32
+	33 [label=D]
+	23 -> 33
+	34 [label=E]
+	23 -> 34
+	35 [label=F]
+	23 -> 35
+	36 [label=G]
+	23 -> 36
+	37 [label=H]
+	23 -> 37
+	38 [label=I]
+	23 -> 38
+	39 [label=J]
+	23 -> 39
+	30 [label=A]
+	24 -> 30
+	31 [label=B]
+	24 -> 31
+	32 [label=C]
+	24 -> 32
+	33 [label=D]
+	24 -> 33
+	34 [label=E]
+	24 -> 34
+	35 [label=F]
+	24 -> 35
+	36 [label=G]
+	24 -> 36
+	37 [label=H]
+	24 -> 37
+	38 [label=I]
+	24 -> 38
+	39 [label=J]
+	24 -> 39
+	30 [label=A]
+	25 -> 30
+	31 [label=B]
+	25 -> 31
+	32 [label=C]
+	25 -> 32
+	33 [label=D]
+	25 -> 33
+	34 [label=E]
+	25 -> 34
+	35 [label=F]
+	25 -> 35
+	36 [label=G]
+	25 -> 36
+	37 [label=H]
+	25 -> 37
+	38 [label=I]
+	25 -> 38
+	39 [label=J]
+	25 -> 39
+	30 [label=A]
+	26 -> 30
+	31 [label=B]
+	26 -> 31
+	32 [label=C]
+	26 -> 32
+	33 [label=D]
+	26 -> 33
+	34 [label=E]
+	26 -> 34
+	35 [label=F]
+	26 -> 35
+	36 [label=G]
+	26 -> 36
+	37 [label=H]
+	26 -> 37
+	38 [label=I]
+	26 -> 38
+	39 [label=J]
+	26 -> 39
+	30 [label=A]
+	27 -> 30
+	31 [label=B]
+	27 -> 31
+	32 [label=C]
+	27 -> 32
+	33 [label=D]
+	27 -> 33
+	34 [label=E]
+	27 -> 34
+	35 [label=F]
+	27 -> 35
+	36 [label=G]
+	27 -> 36
+	37 [label=H]
+	27 -> 37
+	38 [label=I]
+	27 -> 38
+	39 [label=J]
+	27 -> 39
+	30 [label=A]
+	28 -> 30
+	31 [label=B]
+	28 -> 31
+	32 [label=C]
+	28 -> 32
+	33 [label=D]
+	28 -> 33
+	34 [label=E]
+	28 -> 34
+	35 [label=F]
+	28 -> 35
+	36 [label=G]
+	28 -> 36
+	37 [label=H]
+	28 -> 37
+	38 [label=I]
+	28 -> 38
+	39 [label=J]
+	28 -> 39
+	30 [label=A]
+	29 -> 30
+	31 [label=B]
+	29 -> 31
+	32 [label=C]
+	29 -> 32
+	33 [label=D]
+	29 -> 33
+	34 [label=E]
+	29 -> 34
+	35 [label=F]
+	29 -> 35
+	36 [label=G]
+	29 -> 36
+	37 [label=H]
+	29 -> 37
+	38 [label=I]
+	29 -> 38
+	39 [label=J]
+	29 -> 39
+	40 [label=A]
+	30 -> 40
+	41 [label=B]
+	30 -> 41
+	42 [label=C]
+	30 -> 42
+	43 [label=D]
+	30 -> 43
+	44 [label=E]
+	30 -> 44
+	45 [label=F]
+	30 -> 45
+	46 [label=G]
+	30 -> 46
+	47 [label=H]
+	30 -> 47
+	48 [label=I]
+	30 -> 48
+	49 [label=J]
+	30 -> 49
+	40 [label=A]
+	31 -> 40
+	41 [label=B]
+	31 -> 41
+	42 [label=C]
+	31 -> 42
+	43 [label=D]
+	31 -> 43
+	44 [label=E]
+	31 -> 44
+	45 [label=F]
+	31 -> 45
+	46 [label=G]
+	31 -> 46
+	47 [label=H]
+	31 -> 47
+	48 [label=I]
+	31 -> 48
+	49 [label=J]
+	31 -> 49
+	40 [label=A]
+	32 -> 40
+	41 [label=B]
+	32 -> 41
+	42 [label=C]
+	32 -> 42
+	43 [label=D]
+	32 -> 43
+	44 [label=E]
+	32 -> 44
+	45 [label=F]
+	32 -> 45
+	46 [label=G]
+	32 -> 46
+	47 [label=H]
+	32 -> 47
+	48 [label=I]
+	32 -> 48
+	49 [label=J]
+	32 -> 49
+	40 [label=A]
+	33 -> 40
+	41 [label=B]
+	33 -> 41
+	42 [label=C]
+	33 -> 42
+	43 [label=D]
+	33 -> 43
+	44 [label=E]
+	33 -> 44
+	45 [label=F]
+	33 -> 45
+	46 [label=G]
+	33 -> 46
+	47 [label=H]
+	33 -> 47
+	48 [label=I]
+	33 -> 48
+	49 [label=J]
+	33 -> 49
+	40 [label=A]
+	34 -> 40
+	41 [label=B]
+	34 -> 41
+	42 [label=C]
+	34 -> 42
+	43 [label=D]
+	34 -> 43
+	44 [label=E]
+	34 -> 44
+	45 [label=F]
+	34 -> 45
+	46 [label=G]
+	34 -> 46
+	47 [label=H]
+	34 -> 47
+	48 [label=I]
+	34 -> 48
+	49 [label=J]
+	34 -> 49
+	40 [label=A]
+	35 -> 40
+	41 [label=B]
+	35 -> 41
+	42 [label=C]
+	35 -> 42
+	43 [label=D]
+	35 -> 43
+	44 [label=E]
+	35 -> 44
+	45 [label=F]
+	35 -> 45
+	46 [label=G]
+	35 -> 46
+	47 [label=H]
+	35 -> 47
+	48 [label=I]
+	35 -> 48
+	49 [label=J]
+	35 -> 49
+	40 [label=A]
+	36 -> 40
+	41 [label=B]
+	36 -> 41
+	42 [label=C]
+	36 -> 42
+	43 [label=D]
+	36 -> 43
+	44 [label=E]
+	36 -> 44
+	45 [label=F]
+	36 -> 45
+	46 [label=G]
+	36 -> 46
+	47 [label=H]
+	36 -> 47
+	48 [label=I]
+	36 -> 48
+	49 [label=J]
+	36 -> 49
+	40 [label=A]
+	37 -> 40
+	41 [label=B]
+	37 -> 41
+	42 [label=C]
+	37 -> 42
+	43 [label=D]
+	37 -> 43
+	44 [label=E]
+	37 -> 44
+	45 [label=F]
+	37 -> 45
+	46 [label=G]
+	37 -> 46
+	47 [label=H]
+	37 -> 47
+	48 [label=I]
+	37 -> 48
+	49 [label=J]
+	37 -> 49
+	40 [label=A]
+	38 -> 40
+	41 [label=B]
+	38 -> 41
+	42 [label=C]
+	38 -> 42
+	43 [label=D]
+	38 -> 43
+	44 [label=E]
+	38 -> 44
+	45 [label=F]
+	38 -> 45
+	46 [label=G]
+	38 -> 46
+	47 [label=H]
+	38 -> 47
+	48 [label=I]
+	38 -> 48
+	49 [label=J]
+	38 -> 49
+	40 [label=A]
+	39 -> 40
+	41 [label=B]
+	39 -> 41
+	42 [label=C]
+	39 -> 42
+	43 [label=D]
+	39 -> 43
+	44 [label=E]
+	39 -> 44
+	45 [label=F]
+	39 -> 45
+	46 [label=G]
+	39 -> 46
+	47 [label=H]
+	39 -> 47
+	48 [label=I]
+	39 -> 48
+	49 [label=J]
+	39 -> 49
+}
