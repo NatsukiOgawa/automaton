@@ -1,0 +1,203 @@
+2. General CMAB Framework
+
+A CMAB problem consists of m arms associated with
+a set of random variables Xi,t for 1 ≤ i ≤ m and t ≥ 1,
+with bounded support on [0, 1]. Variable Xi,t indicates
+the random outcome of the i-th arm in its t-th trial.
+The set of random variables {Xi,t | t ≥ 1} associated with arm i are independent and identically distributed according to some unknown distribution with
+unknown expectation µi
+. Let µ = (µ1, µ2, . . . , µm) be
+the vector of expectations of all arms. Random variables of different arms may be dependent.
+
+
+
+
+
+We refer to every set of arms S ∈ S as a super arm
+of the CMAB problem. In each round, one super arm
+S ∈ S is played and the outcomes of arms in S are
+revealed. More precisely, for each arm i ∈ [m], let Ti,t
+denote the number of times the outcome of arm i is
+revealed after the first t rounds in which t super arms
+are played. If S ∈ S is the super arm played in round
+t, the outcomes of random variables Xi,Ti,t for all i ∈ S
+are revealed. For some problem instances (e.g. social
+influence maximization in Section 4.2), the outcomes
+of other arms may also be revealed depending on the
+outcomes of arms in S.
+
+S(筆記体) ∈ 2[m]
+　→アームの取りうる部分集合のセット
+
+S(普通) ∈ S(筆記体)
+　→すべてのS(普通) ∈ S(筆記体)
+　　→各ラウンドにて、S(普通)に含まれるアームiの結果が明らかにされる。
+
+Let Rt(S) be a non-negative random variable denoting the reward of round t when super arm S is played.
+The reward depends on the actual problem instance
+definition, the super arm S played, and the outcomes
+of the revealed arms in round t. The reward Rt(S)
+might be as simple as a summation of the outcomes of
+the arms in S: Rt(S) = P
+i∈S Xi,Ti(t)
+, but our framework allows more sophisticated nonlinear rewards, as
+explained below.
+
+
+
+
+
+In this paper, we consider CMAB problems in which
+the expected reward of playing any super arm S in
+any round t, E[Rt(S)], is a function of only the set
+of arms S and the expectation vector µ of all arms.
+For the linear reward case as given above, this is true
+because linear addition is commutative with the expectation operator. For non-linear reward functions
+not commutative with the expectation operator, it is
+still true if we know the type of distributions and only
+the expectations of arm outcomes are unknown, and
+outcomes of different arms are independent. For example, the distribution of Xi,t’s are known to be 0-1
+Bernoulli random variables with unknown mean µi
+.
+Henceforth, we denote the expected reward of playing
+S as rµ(S) = E[Rt(S)]. To carry out our analysis,
+we make the following two mild assumptions on the
+expected reward rµ(S):
+• Monotonicity. The expected reward of playing
+any super arm S ∈ S is monotonically nondecreasing with respect to the expectation vector, i.e., if
+for all i ∈ [m], µi ≤ µ
+0
+i
+, we have rµ(S) ≤ rµ0 (S)
+for all S ∈ S.
+• Bounded smoothness. There exists a strictly
+increasing (and thus invertible) function f(·),
+called bounded smoothness function, such that for
+any two expectation vectors µ and µ
+0
+, we have
+|rµ(S) − rµ0 (S)| ≤ f(Λ) if maxi∈S |µi − µ
+0
+i
+| ≤ Λ.
+Both assumptions are natural. In particular, they hold
+true for all the applications we considered.
+
+
+
+
+
+
+A CMAB algorithm A is one that selects the super arm
+of round t to play based on the outcomes of revealed
+arms of previous rounds, without knowing the expectation vector µ. Let S
+A
+t be the super arm selected by
+A in round t. Note that S
+A
+t
+is a random super arm that
+depends on the outcomes of arms in previous rounds
+and potential randomness in the algorithm A itself.
+The objective of algorithm A is to maximize the expected reward of all rounds up to a round n, that is,
+ES,R[
+Pn
+t=1 Rt(S
+A
+t
+)] = ES[
+Pn
+t=1 rµ(S
+A
+t
+)], where ES,R
+denotes taking expectation among all random events
+generating the super arms S
+A
+t
+’s and generating rewards Rt(S
+A
+t
+)’s, and ES denotes taking expectation
+only among all random events generating the super
+arms S
+A
+t
+’s.
+
+
+
+
+
+We do not assume that the learning algorithm has the
+direct knowledge about the problem instance, e.g. how
+super arms are formed from the underlying arms and
+how reward is defined. Instead, the algorithm has access to a computation oracle that takes the expectation
+vector µ as the input, and together with the knowledge
+of the problem instance, computes the optimal or nearoptimal super arm S. Let optµ = maxS∈S rµ(S) and
+S
+∗
+µ = argmaxS∈S rµ(S). We consider the case that exact computation of S
+∗
+µ may be computationally hard,
+and the algorithm may be randomized with a small
+failure probability. Thus, we resolve to the following
+(α, β)-approximation oracle:
+• (α, β)-Approximation oracle. There is an
+(α, β)-approximation oracle for some α, β ≤ 1
+that takes an expectation vector µ as input, and
+outputs a super arm S ∈ S, such that Pr[rµ(S) ≥
+α · optµ] ≥ β. Here β is the success probability of
+the oracle.
+
+
+
+
+
+A lot of computationally hard problems do admit efficient approximation oracles (Vazirani , 2004). With an
+(α, β)-approximation oracle, it is no longer fair to compare the performance of a CMAB algorithm against
+the optimal reward optµ as the regret of the algorithm. Instead, we compare against the α · β fraction
+of the optimal reward, because only a β fraction of
+oracle computations are successful, and when successful the reward is only α-approximate of the optimal
+value. Formally, we define (α, β)-approximation regret
+of a CMAB algorithm A after n rounds of play using
+an (α, β)-approximation oracle under the expectation
+vector µ as
+[数式].
+
+
+
+
+
+
+1: For each arm i, maintain: (1) variable Ti as the
+total number of times arm i is played so far; (2)
+variable ˆµi as the mean of all outcomes Xi,∗’s of
+arm i observed so far.
+2: For each arm i, play an arbitrary super arm S ∈ S
+such that i ∈ S and update variables Ti and ˆµi
+.
+3: t ← m.
+4: while true do
+5: t ← t + 1.
+6: For each arm i, set ¯µi = ˆµi +
+q3 ln t
+2Ti
+.
+7: S = Oracle(¯µ1, µ¯2, . . . , µ¯m).
+8: Play S and update all Ti
+’s and ˆµi
+’s.
+9: end while
+Algorithm 1: CUCB with computation oracle
+
+
+
+
+
+Note that the classical MAB problem is a special case
+of our general CMAB problem, in which (a) the constraint S = [m] so that each super arm is just a simple
+arm; (b) the reward of a super arm S = i in its t’s trial
+is its outcome Xi,t; (c) the monotonicity and bounded
+smoothness hold trivially with function f(·) being the
+identity function; and (d) the (α, β)-approximation oracle is simply the argmax function among all expectation vectors, with α = β = 1.

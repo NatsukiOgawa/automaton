@@ -34,7 +34,7 @@ for i in range(N):
         # [5]:4 //2 = 2    → 2
         # [6]:5 //2 = 2.5  → 2
 
-print(G)
+# print(G)
 # print()するとdot形式で出力される
 
 G.render('binary_tree')

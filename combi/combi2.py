@@ -8,11 +8,11 @@ G = Digraph(format= 'pdf')
 G.attr('node', shape='circle')
 # shape='<要素の形を指定>'
 # ノード数(ここでは "点"のこと)
-one_num   = 2
+one_num   = 5
 two_num   = 2
-three_num = 2
+three_num = 3
 four_num  = 2
-five_num  = 2
+five_num  = 1
 
 elements = [one_num, two_num, three_num, four_num, five_num]
 
@@ -159,5 +159,5 @@ for n in range(1):
 # print()
 #
 #
-# G.render('image2')
-# # binary_tree.<shape='   '>で保存
+G.render('image2')
+# binary_tree.<shape='   '>で保存
